@@ -1,5 +1,5 @@
 %hook CbInAppPurchaseController
-- (BOOL) premiumVersionInUnlocked {
-    return 1;
+- (BOOL) premiumVersionIsUnlocked {
+    return YES;
 }
 %end
