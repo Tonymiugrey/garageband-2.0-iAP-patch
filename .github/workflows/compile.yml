@@ -23,7 +23,7 @@ on:
 
 jobs:
   compile:
-    runs-on: macos-12
+    runs-on: macos-14-large
 
     steps:
       - name: Checkout repository
