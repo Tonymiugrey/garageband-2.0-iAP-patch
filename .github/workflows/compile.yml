@@ -23,8 +23,7 @@ on:
 
 jobs:
   compile:
-    runs-on: macos-14-large
-
+    runs-on: macos-14
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
