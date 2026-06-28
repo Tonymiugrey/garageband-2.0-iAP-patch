@@ -61,12 +61,13 @@ jobs:
           C_FILES=$(find . -name "*.c" -type f)
           clang++ -dynamiclib -fobjc-arc -o liboutput.dylib \
           $M_FILES $C_FILES \
-          -arch arm64 -arch arm64e \
+          -arch arm64 -arch arm64e -arch armv7 \
           -isysroot $(xcrun --sdk iphoneos --show-sdk-path) \
-          -mios-version-min=14.0 \
+          -mios-version-min=7.0 \
           -std=c++17 \
           -framework Foundation \
           -framework UIKit \
+          -framework StoreKit \
           -framework AVFoundation \
           -framework CoreGraphics \
           -framework QuartzCore \
