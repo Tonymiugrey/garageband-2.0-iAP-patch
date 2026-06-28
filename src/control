@@ -1,5 +1,6 @@
 Package: com.miugrey.gbunlock
 Name: GBUnlock
+Depends: mobilesubstrate
 Version: 1.0.0
 Architecture: iphoneos-arm
 Description: Instantly unlock IAP for GarageBand 2.0 on iOS 7.
